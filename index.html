@@ -23,16 +23,24 @@
     <main>
       <h3>Select Your Current Emotion</h3>
       <div class="controls-container">
-        <div class="emotion-radios" id="emotion-radios"></div>
+        <div class="emotion-radios" id="emotion-radios">
+          <div class="radio">
+            <label for="happy">happy</label>
+            <input type="radio" id="happy" value="happy" name="emotions" />
+          </div>
+        </div>
         <div class="gifs-check">
           <label for="gifs-only-option" class="gifs-check-label"
             >Animated Gifs Only</label
           >
           <input type="checkbox" id="gifs-only-option" />
         </div>
-        <button>Get Image</button>
+        <button class="get-image-btn" id="get-image-btn">Get Image</button>
       </div>
     </main>
-    <div></div>
+    <div class="meme-modal" id="meme-modal">
+      <div class="meme-modal-close-btn" id="meme-modal-close-btn">X</div>
+      <div class="meme-modal-inner"></div>
+    </div>
   </body>
 </html>
